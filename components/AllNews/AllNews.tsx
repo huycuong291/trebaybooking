@@ -35,7 +35,7 @@ const AllNews = (props: Props) => {
               plugins={[autoplay.current]}
               onMouseEnter={autoplay.current.stop}
               onMouseLeave={autoplay.current.reset}>
-              {newData.slice(0, 5).map((item) => {
+              {newData?.slice(0, 5).map((item) => {
                 return (
                   <Carousel.Slide key={item.id}>
                     <div className="mkdf-ni-item-inner carousel-parent">
